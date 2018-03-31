@@ -14,7 +14,7 @@
       "type": "array",
       "defaultValue": []
     }
-  }
+  },
   "resources": [
    {
     "apiVersion": "2017-06-01",
