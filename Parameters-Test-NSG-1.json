@@ -3,15 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
         "nsgName": {
-            "defaultValue": "Test-NSG-1"
+            "value": "Test-NSG-1"
         },
         "location": {
-            "type": "string",
-            "defaultValue": "East US"
+            "value": "East US"
         },
         "nsgRules": {
-            "type": "array",
-            "defaultValue": [
+            "value": [
                 {
                     "name": "Test-Rule-1",
                     "properties": {
