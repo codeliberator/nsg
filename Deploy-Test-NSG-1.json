@@ -1,0 +1,7 @@
+#!/bin/bash
+
+az group deployment create \
+	--verbose \
+	--name NSG-D1 \
+        --resource-group RG-01 \
+        --template-file Deployment-Template-Test-NSG-1.json

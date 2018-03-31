@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+     "apiVersion": "2017-05-10",
+     "name": "linkedTemplate",
+     "type": "Microsoft.Resources/deployments",
+     "properties": {
+       "mode": "incremental",
+       "parametersLink": {
+          "uri":"https://raw.githubusercontent.com/codeliberator/nsg/Test/Parameters-Test-NSG-1.json",
+          "contentVersion":"1.0.0.0"
+       },
+       "templateLink": {
+          "uri":"https://raw.githubusercontent.com/codeliberator/nsg/Test/Template-Test-NSG-1.json",
+          "contentVersion":"1.0.0.0"
+       }
+     }
+   }
+  ]
+}
