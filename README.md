@@ -1,0 +1,2 @@
+# nsg
+Test arm templates
