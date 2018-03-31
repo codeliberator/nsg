@@ -1,5 +1,4 @@
 {
-    "parameters": {
         "nsgName": {
             "type": "string",
             "defaultValue": "Test-NSG-1"
@@ -41,5 +40,4 @@
                 }
             ]
         }
-    }
 }
