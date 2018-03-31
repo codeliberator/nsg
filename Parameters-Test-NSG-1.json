@@ -2,13 +2,9 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-        "nsgName": {
-            "value": "Test-NSG-1"
-        },
-        "location": {
-            "value": "East US"
-        },
-        "nsgRules": {
+        "nsgName":   { "value": "Test-NSG-1" },
+        "location":  { "value": "East US" },
+        "nsgRules":  {
             "value": [
                 {
                     "name": "Test-Rule-1",
