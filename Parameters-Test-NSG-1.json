@@ -1,0 +1,45 @@
+{
+    "parameters": {
+        "nsgName": {
+            "type": "string",
+            "defaultValue": "Test-NSG-1"
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "East US"
+        },
+        "nsgRules": {
+            "type": "array",
+            "defaultValue": [
+                {
+                    "name": "Test-Rule-1",
+                    "properties": {
+                        "description": "Allow all traffic within Subnet",
+                        "sourceAddressPrefixes": ["172.25.10.0/23"],
+                        "priority": 100,
+                        "destinationPortRange": "*",
+                        "direction": "Inbound",
+                        "sourcePortRange": "*",
+                        "access": "Allow",
+                        "destinationAddressPrefixes": ["172.25.10.0/23"],
+                        "protocol": "TCP"
+                    }
+                },
+                {
+                    "name": "Test-Rule-2",
+                    "properties": {
+                        "description": "RDP - In",
+                        "sourceAddressPrefixes": ["172.25.62.0/27", "10.244.2.0/24"],
+                        "priority": 110,
+                        "destinationPortRanges": ["3389"],
+                        "direction": "Inbound",
+                        "sourcePortRange": "*",
+                        "access": "Allow",
+                        "destinationAddressPrefix": "*",
+                        "protocol": "TCP"
+                    }
+                }
+            ]
+        }
+    }
+}
